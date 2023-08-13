@@ -5,57 +5,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/normalaze.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/85c7e8dfa0.js" crossorigin="anonymous"></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title> FrontEnd Mentor Chatt APP </title>
 
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
+  <div class="rectangle rectangle-left">
 
-  Samuel Green
-  Available to Walk
+  </div>
+  <div class="rectangle rectangle-right">
 
-  That sounds great. I’d be happy with that.
+  </div>
+  <div class="phone-frame">
+    <div class="phone-border">
+      <div class="phone-bang"></div>
+      <div class="phone-header">
+        <div class="phone-header-avatar">
+          <div class="shevron">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <img class="phone-header-image" src="/img/avatar.jpg" alt="Avatar">
 
-  Could you send over some pictures of your dog, please?
+          <div class="phone-header-text">
+            <h2 class="phone-header-heading">Samuel Green</h2>
+            <p class="phone-header-paragraph">Available to Walk</p>
+          </div>
+          <div class="shape">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+      </div>
+      <div class="chat-on-the-left">That sounds great. I’d be happy with that.</div>
+      <div class="chat-on-the-left">Could you send over some pictures of your dog, please?</div>
+      <div class="chat-right">
+        <div class="chat-dog-pictures">
+          <img src="img/dog-image-1.jpg" alt="" class="dog-image">
+          <img src="img/dog-image-2.jpg" alt="" class="dog-image">
+          <img src="img/dog-image-3.jpg" alt="" class="dog-image">
+        </div>
+        <div class="chat-right-text">Here are a few pictures. She’s a happy girl!</div>
+        <div class="chat-right-text"> Can you make it?</div>
+      </div>
+      <div class="chat-on-the-left">She looks so happy! The time we discussed works. How long shall I take her out for?
+      </div>
+      <div class="price"> 30 minute walk
+        $29</div>
+      <div class="price"> 1 hour walk
+        $49</div>
+      <div class="type-message">
+        <p class="message-paragraph">Type a message…</p>
+        <div class="message-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
+            <ellipse cx="12.1359" cy="12.9544" rx="12.1359" ry="12.1103" fill="#3E2753" />
+            <path
+              d="M10.0642 8.46499C10.5017 8.02844 11.1901 7.99485 11.6661 8.36425L11.7805 8.46499L15.4212 12.0981C15.8587 12.5346 15.8924 13.2216 15.5222 13.6967L15.4212 13.8107L11.7805 17.4438C11.3065 17.9168 10.5381 17.9168 10.0642 17.4438C9.62671 17.0073 9.59306 16.3203 9.96324 15.8453L10.0642 15.7312L12.8459 12.9544L10.0642 10.1776C9.62671 9.74109 9.59306 9.05416 9.96324 8.57908L10.0642 8.46499Z"
+              fill="white" />
+          </svg>
+        </div>
 
-  Here are a few pictures. She’s a happy girl!
+      </div>
+    </div>
+  </div>
+  <div class="adv-text">
 
-  Can you make it?
+    <p class="main-heading">Simple booking</p>
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+    <p class="adv-paragraph"> Stay in touch with our dog walkers through the chat interface. This makes it easy to
+      discuss arrangements and make bookings. Once the walk has been completed you can rate
+      your walker and book again all through the chat.</p>
 
-  30 minute walk
-  $29
+  </div>
 
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to
-  discuss arrangements and make bookings. Once the walk has been completed you can rate
-  your walker and book again all through the chat.
-
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Danil Vorobev</a>.
-  </div>
+  </footer>
 </body>
 
 </html>
