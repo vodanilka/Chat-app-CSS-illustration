@@ -76,6 +76,7 @@ body {
   margin: 10px auto;
   background-color: hsl(270, 20%, 96%);
   border-radius: 20px;
+  position: relative;
 }
 .phone-header {
   width: 228px;
@@ -83,21 +84,23 @@ body {
   background: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
   border-radius: 20px 20px 6px 6px;
   flex-shrink: 0;
+  position: relative;
 }
 .phone-bang {
   width: 129px;
-  height: 29px;
+  height: 18px;
   background-color: white;
   position: absolute;
   top: 0;
-  left: 59px;
+  left: 49.5px;
   border-radius: 0 0 14px 14px;
+  z-index: 11111;
 }
 .phone-header-avatar {
   width: 196px;
   height: 24px;
   position: absolute;
-  top: 41px;
+  top: 30px;
   left: 25px;
 }
 .phone-header-text {
@@ -254,4 +257,43 @@ i {
   height: 25px;
   margin-right: 4px;
   margin-top: 1px;
+}
+/************************ Mobile view********************/
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    height: 936px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+  }
+  .rectangle-left {
+    left: -322px;
+    top: -509px;
+  }
+  .rectangle-right {
+    right: -323px;
+    bottom: -509px;
+  }
+  .adv-text {
+    width: 311px;
+    height: 239px;
+    position: unset;
+  }
+  .phone-frame {
+    position: unset;
+    margin-top: 64px;
+  }
+  .adv-text {
+    margin-top: 64px;
+  }
+
+  .adv-paragraph {
+    margin-top: 24px;
+  }
+  .attribution {
+    display: none;
+  }
 }
