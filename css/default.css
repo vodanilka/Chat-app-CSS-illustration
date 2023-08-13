@@ -12,8 +12,8 @@
 body {
   font-family: "Rubik", sans-serif;
   position: relative;
-  width: 1440px;
-  height: 800px;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   background-color: hsl(270, 20%, 96%);
 }
