@@ -17,6 +17,12 @@ body {
   overflow: hidden;
   background-color: hsl(270, 20%, 96%);
 }
+header {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  overflow: hidden;
+}
 .rectangle {
   width: 510px;
   height: 1018px;
