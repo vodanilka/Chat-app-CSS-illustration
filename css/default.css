@@ -1,28 +1,31 @@
+:root {
+  --color-phone-sub-heading: hsl(276, 100%, 81%);
+  --color-phone-heading: white;
+  --color-text-prymary: hsl(206, 6%, 79%);
+  --color-heading-prymary: hsl(271, 36%, 24%);
+  --color-background-prymary: hsl(276, 41%, 93%);
+  --color-background-secondary: hsl(270, 20%, 96%);
+  --gradient: linear-gradient(
+    255deg,
+    hsl(264, 100%, 61%) 20%,
+    hsl(293, 100%, 63%) 150%
+  );
+}
+
 html {
   font-size: 62.5%;
 }
-.attribution {
-  font-size: 1rem;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  padding: 1rem 1rem;
-}
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 body {
   font-family: "Rubik", sans-serif;
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
   max-width: 1440px;
-  min-width: 800px;
+  min-width: 1220px;
   height: 800px;
-  background-color: hsl(270, 20%, 96%);
+  background-color: var(--color-background-prymary);
 }
 header {
   position: absolute;
@@ -33,39 +36,37 @@ header {
 .rectangle {
   width: 510px;
   height: 1018px;
-  background: linear-gradient(
-    36deg,
-    hsl(264, 100%, 61%) 0%,
-    hsl(293, 100%, 63%) 150%
-  );
+  background: var(--gradient);
   z-index: -1;
   border-radius: 255px;
 }
 .rectangle-left {
   position: absolute;
-  left: -10%;
+  left: -90px;
   top: -325px;
 }
 .rectangle-right {
   position: absolute;
-  right: -10%;
+  right: -90px;
   bottom: -325px;
   opacity: 0.03;
 }
 
 /****************** Advertising text ****************/
 aside {
-  width: 30%;
+  width: 330px;
+  position: absolute;
+  left: 700px;
 }
 h1 {
   font-size: 4rem;
   font-weight: 500;
-  color: hsl(271, 36%, 24%);
+  color: var(--color-heading-prymary);
 }
 .adv-paragraph {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  color: hsl(270, 7%, 64%);
+  color: var(--color-text-prymary);
   line-height: 28px;
 }
 /******************** PHONE ***************************/
@@ -75,10 +76,12 @@ main {
   height: 505px;
   background-color: white;
   border-radius: 30px;
+  position: absolute;
+  left: 350px;
 }
 .phone-border {
   width: 90%;
-  height: 483px;
+  height: 95%;
   margin: 10px auto;
   background-color: hsl(270, 20%, 96%);
   border-radius: 20px;
@@ -87,18 +90,17 @@ main {
 .phone-header {
   width: 100%;
   height: 66px;
-  background: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+  background: var(--gradient);
   border-radius: 20px 20px 6px 6px;
-  flex-shrink: 0;
   position: relative;
 }
 .phone-bang {
-  width: 129px;
+  width: 50%;
   height: 18px;
   background-color: white;
   position: absolute;
   top: 0;
-  left: 49.5px;
+  left: 56px;
   border-radius: 0 0 14px 14px;
   z-index: 11111;
 }
@@ -164,8 +166,8 @@ i {
   width: 128px;
   padding: 6px 8px;
   border-radius: 10px 10px 4px 10px;
-  background: #eee5f4;
-  color: #9341c8;
+  background: hsl(276, 41%, 93%);
+  color: hsl(276, 55%, 52%);
   font-size: 8px;
   font-weight: 400;
   line-height: 11px;
@@ -193,12 +195,16 @@ i {
   width: fit-content;
   padding: 6px 8px;
   border-radius: 10px 10px 4px 10px;
-  background: #eee5f4;
+  background: hsl(276, 41%, 93%);
   color: #6e5d7e;
   font-size: 8px;
   font-weight: 400;
   line-height: 11px;
   margin: 8px;
+  -webkit-border-radius: 10px 10px 4px 10px;
+  -moz-border-radius: 10px 10px 4px 10px;
+  -ms-border-radius: 10px 10px 4px 10px;
+  -o-border-radius: 10px 10px 4px 10px;
 }
 /**********************Left message price***************/
 
@@ -252,7 +258,7 @@ i {
   margin: 16px auto 0;
 }
 .message-paragraph {
-  color: #c5c9cc;
+  color: hsl(206, 6%, 79%);
   font-size: 9px;
   font-weight: 400;
   letter-spacing: -0.07px;
@@ -271,6 +277,7 @@ i {
     height: 936px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     align-content: center;
     overflow: hidden;
@@ -283,16 +290,18 @@ i {
     right: -323px;
     bottom: -509px;
   }
+
+  aside {
+    position: unset;
+  }
   .adv-text {
     width: 311px;
     height: 239px;
-    position: unset;
-  }
-  .phone-frame {
-    position: unset;
     margin-top: 64px;
+    position: unset;
   }
-  .adv-text {
+  main {
+    position: unset;
     margin-top: 64px;
   }
 
@@ -302,4 +311,16 @@ i {
   .attribution {
     display: none;
   }
+}
+/*********************** Atribution********************/
+footer {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 1rem;
+  color: var(--color-heading-prymary);
+}
+footer a {
+  color: var(--color-heading-prymary);
 }
