@@ -173,6 +173,7 @@ i {
   line-height: 11px;
   margin: 8px;
 }
+
 .chat-right {
   display: flex;
   flex-direction: column;
